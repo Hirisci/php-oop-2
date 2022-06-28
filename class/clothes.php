@@ -7,7 +7,7 @@ class Clothes extends Product
     public $color;
 
 
-    public function __construct($name, $price, $stoch, $animalType, $size, $color)
+    public function __construct(String $name, int $price, int $stoch, string $animalType, string $size, string $color)
     {
         parent::__construct($name, $price, $stoch, $animalType = "all");
         $this->size = $size;

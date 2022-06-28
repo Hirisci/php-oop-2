@@ -7,7 +7,7 @@ class Food extends Product
     public $expireDate = null;
 
 
-    public function __construct($name, $price, $stoch, $animalType, $expireDate)
+    public function __construct(String $name, int $price, int $stoch, string $animalType, DateTime $expireDate)
     {
         parent::__construct($name, $price, $stoch, $animalType = "all");
         $this->expireDate = $expireDate;

@@ -7,7 +7,7 @@ class Product
     public $stoch;
     public $animalType;
 
-    public function __construct($name, $price, $stoch, $animalType = "all")
+    public function __construct(String $name, int $price, int $stoch, string $animalType = "all")
     {
         $this->name = $name;
         $this->price = $price;
