@@ -4,17 +4,17 @@
 
 class Toy extends Product
 {
-    public $expireDate = null;
+    public $size;
 
 
-    function __construct($name, $price, $stoch, $animalType, $expireDate)
+    function __construct($name, $price, $stoch, $animalType, $size)
     {
         parent::__construct($name, $price, $stoch, $animalType = "all");
-        $this->expireDate = $expireDate;
+        $this->size = $size;
     }
 
-    function getExpireDate()
+    function getSize()
     {
-        return $this->expireDate;
+        return $this->size;
     }
 }
