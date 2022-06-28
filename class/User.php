@@ -9,6 +9,7 @@ class User
     public $email;
     public $cart;
     public $creditCard;
+    public $discount = 0;
 
     public function __construct(DateTime $expireCreditCard, string $name, string $surname, string $email)
     {
@@ -17,5 +18,10 @@ class User
         $this->name = $name;
         $this->surname = $surname;
         $this->email = $email;
+    }
+
+    public function priceCart()
+    {
+        return $this->cart->price / 100 * (100 - $this->discount);
     }
 }
