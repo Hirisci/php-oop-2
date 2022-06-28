@@ -7,7 +7,7 @@ class Product
     public $stoch;
     public $animalType;
 
-    function __construct($name, $price, $stoch, $animalType = "all")
+    public function __construct($name, $price, $stoch, $animalType = "all")
     {
         $this->name = $name;
         $this->price = $price;
@@ -15,22 +15,22 @@ class Product
         $this->animalType = $animalType;
     }
 
-    function getName()
+    public function getName()
     {
         return $this->name;
     }
 
-    function getStoch()
+    public function getStoch()
     {
         return $this->stoch;
     }
 
-    function getPrice()
+    public function getPrice()
     {
         return $this->price;
     }
 
-    function getAnimalType()
+    public function getAnimalType()
     {
         return $this->animalType;
     }
