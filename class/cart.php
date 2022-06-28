@@ -7,7 +7,7 @@ class Cart
 
     public function addItem(object $obj)
     {
-        $this->list = $obj;
+        $this->list[] = $obj;
         $this->price += $obj->price;
     }
 
